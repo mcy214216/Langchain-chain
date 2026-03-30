@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-# 修复版：成语接龙 + FAISS检索 + 强制从成语库取词 + 不会空结果
+# 时间 : 2026/3/30 09:08
+# 作者 : mcy
+# 文件 : 成语接龙.py
 import re
 import random
 from langchain_community.vectorstores import FAISS
@@ -17,7 +19,7 @@ chat_model = ChatOpenAI(
 
 # ---------------------- 加载成语库 ----------------------
 try:
-    loader = TextLoader("成语大全.txt", encoding='utf-8')
+    loader = TextLoader("../成语大全.txt", encoding='utf-8')
     docs = loader.load()
 except:
     print("❌ 请确保当前目录存在 成语大全.txt 文件！")
