@@ -1,7 +1,11 @@
 # Langchain-chain
 “链（” Chains）指的是一个概念上的组件或模块，它能够处理输入并产生输出。  
 旨在将大型语言模型（LLMs）与外部数据源和计算资源结合起来，以实现更强大的应用。
-它通过三个核心组件来增强LLMs的功能：组件（Components）、链（Chains）和代理（Agents）。
+它通过三个核心组件来增强LLMs的功能：组件（Components）、链（Chains）和代理（Agents）。  
+
+***  
+本仓库代码项目为成语接龙
+  
 ## 组件（Components）
 组件为LLMs提供接口封装、模板提示和信息检索索引。它们允许开发者连接到大型语言模型，如GPT-4或Hugging Face提供的模型，并动态生成查询，避免硬编码。
 ## 链（Chains）

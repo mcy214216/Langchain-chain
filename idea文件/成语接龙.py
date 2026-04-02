@@ -33,7 +33,6 @@ for doc in docs:
         line = line.strip()
         if len(line) == 4:
             all_idioms.add(line)
-
 print(f"✅ 成功加载成语数量：{len(all_idioms)} 个")
 
 # ---------------------- 构建检索库 ----------------------
